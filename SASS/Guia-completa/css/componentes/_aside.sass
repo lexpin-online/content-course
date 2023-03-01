@@ -1,0 +1,21 @@
+/*Mapa de valores / Objeto*/
+$valores:("categoria" #2b4854 400, "titulo" #093957 900, "descripcion" #000 700)
+
+@each $nombre,$color,$grosor in $valores
+    .articulo_#{$nombre}
+        color: $color
+        font-weight: $grosor
+
+aside
+    display: flex
+    flex-direction: column
+    justify-content: space-around
+    height: 100%
+    width: 100%
+    background-color: #58bfffb6
+
+.articulo
+    display: flex
+    flex-direction: column
+    padding: 0px 8px 0px 8px
+    

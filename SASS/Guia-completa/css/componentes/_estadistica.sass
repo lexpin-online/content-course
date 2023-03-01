@@ -1,0 +1,13 @@
+.estadisticas
+	@include rowCenter()
+	gap: 20px
+	background-color: #FFF
+	padding: 30px
+	border-radius: 20px
+	color: black
+	/*box-shadow añade efectos de sombra alrededor del marco de un elemento*/
+	@include sombras(null, -4px 5px $px15 2px black)
+	&-elemento
+		@include colCenter()
+		& h3
+			font-style: italic

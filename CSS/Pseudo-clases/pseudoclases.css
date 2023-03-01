@@ -1,0 +1,194 @@
+:root {
+	--fondoPrimario: #4c92d7;
+	--azul: #3860EC;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+body {
+	background: var(--fondoPrimario);
+	font-family: 'Roboto', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+}
+
+ul {
+	margin: 0;
+}
+
+.contenedor {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	gap: 10px;
+	width: 80vw;
+	padding: 10px;
+}
+
+.titulo {
+	font-size: 35px;
+	background: linear-gradient(rgb(9, 108, 170), rgb(9, 47, 78));
+	padding: 15px;
+	border-radius: 10px;
+	text-align: center;
+	text-transform: uppercase;
+	color: rgb(234, 233, 233);
+	margin-top: 10vh;
+	margin-bottom: 10vh;
+}
+
+.caja {
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+label {
+	display: block;
+	margin-bottom: 10px;
+}
+
+.caja div p,
+.caja div div,
+.caja div span,
+.caja ul li,
+.caja div h1,
+.caja div h2, 
+.caja div h3, 
+.caja div h4 {
+	background: #dbdbdb;
+	border-radius: 5px;
+	padding: 10px;
+	margin: 0px;
+	font-weight: 500;
+	font-size: 16px;
+}
+
+.links{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+	background: #dbdbdb;
+	height: 140px;
+	border-radius: 10px;
+	padding-top: 20px;
+}
+
+.grupo1{
+	list-style:none;
+	padding-left: 0px;
+}
+.grupo1 li::before{
+	content:"Yo";
+	margin-right:5px;
+}
+
+/* ? ------------- PSEUDO-CLASES ------------- */
+.enlace:active {
+	background: #000;
+}
+
+.enlace:link {
+	color: rgb(136, 0, 255);
+}
+
+.enlace:visited {
+	color: #822709;
+}
+
+.enlace:hover {
+	color: rgb(204, 255, 0);
+	font-family: arial;
+	font-size: 19px;
+	text-align: center;
+}
+
+#ancla:link{
+	color: red;
+}
+
+#ancla:visited{
+	color: green;
+}
+
+#ancla:active{
+	font-family: roboto;
+	font-size: 15px;
+	color:fuchsia;
+}
+
+
+/* ? --- --- --- --- PARRAFOS --- --- --- --- */
+.parrafos p:first-child {
+	background: var(--azul);
+	color: #fff;
+}
+
+.parrafos p:last-child {
+	background: #000;
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- ELEMENTOS --- --- --- --- */
+.elementos{
+	display: flex;
+	flex-direction: column;
+}
+
+.elementos p:first-of-type {
+	background: var(--azul);
+	color: #fff;
+}
+
+.elementos div:last-of-type {
+	background: #000;
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO --- --- --- --- */
+.grupo1 :nth-child(2){
+	background: var(--azul);
+	color: #fff;
+}
+
+.grupo1 :nth-last-child(1){
+	background: #000;
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 2 --- --- --- --- */
+.grupo2 p:nth-of-type(3) {
+	background: var(--azul);
+	color: #fff;
+}
+
+.grupo2 div:nth-last-of-type(2) {
+	background: #000;
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 3 --- --- --- --- */
+.grupo3 p:only-child {
+	background: var(--azul);
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 4 --- --- --- --- */
+.grupo4 p:only-of-type {
+	background: var(--azul);
+	color: #fff;
+}
+
+
+/* ? --- --- --- --- GRUPO 5 --- --- --- --- */
+.grupo5 :not(p){
+	color: blue;
+}

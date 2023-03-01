@@ -1,0 +1,47 @@
+$color:white
+$fondo:radial-gradient(#5cc048, #083705)
+
+@mixin filaCentrada
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin estilosParrafo($param1:yellow, $param2:blue, $param3:null, $param4:null, $param5:500)
+    background-color: $param1
+    color: $param2
+    font-family: $param3
+    font-style: $param4
+    font-weight: $param5
+
+*
+    box-sizing: border-box
+    top: 0px
+    margin: 0px
+
+body
+    @include filaCentrada
+    background: $fondo
+    width: 100vw
+    height: 100vh
+
+.caja
+    display: none
+    justify-content: center
+    gap: 31px
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor*/
+
+/*& Hace referencia a el selector padre 
+    en este caso & = .contenedor_box*/
+.contenedor
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    place-items: center
+    width: 90vw
+    height: 90vh
+    &_box
+        background-color: $color
+        padding: 10px
+        &_parrafo
+            @include estilosParrafo(red)

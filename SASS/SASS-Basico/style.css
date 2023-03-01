@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+  top: 0px;
+  margin: 0px;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(#5cc048, #083705);
+  width: 100vw;
+  height: 100vh;
+}
+
+.caja {
+  display: none;
+  justify-content: center;
+  gap: 31px;
+}
+
+/*& Hace referencia a el selector padre 
+ *  en este caso & = .contenedor*/
+/*& Hace referencia a el selector padre 
+ *  en este caso & = .contenedor_box*/
+.contenedor {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  place-items: center;
+  width: 90vw;
+  height: 90vh;
+}
+.contenedor_box {
+  background-color: white;
+  padding: 10px;
+}
+.contenedor_box_parrafo {
+  background-color: red;
+  color: blue;
+  font-weight: 500;
+}/*# sourceMappingURL=style.css.map */
