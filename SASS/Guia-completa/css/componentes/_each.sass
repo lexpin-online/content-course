@@ -1,0 +1,18 @@
+/*-----NUEVO 🔥⚡☝🏻Loop @each*/
+/*Loop basico, Con cada vuelta se indenta un valor 
+	de la variable tallas, usando BEM
+	*/
+@each $valor in $tallas
+	.parrafo_#{$valor}
+		font-size: $valor * 1px 
+
+/*loop each con mapa/objeto */
+@each $nombre,$valor in $tallas2
+	.parrafo_#{$nombre}
+		font-size: $valor
+
+/*@each de aside*/
+@each $nombre,$color,$grosor in $valores
+    .articulo_#{$nombre}
+        color: $color
+        font-weight: $grosor

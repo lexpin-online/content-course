@@ -1,0 +1,113 @@
+body{
+    background: linear-gradient(rgb(2, 123, 109), rgb(2, 33, 38));
+    top: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.box{
+    display: grid;
+    place-items: center;
+    color:white;
+    font-size: 50px;
+    font-family: arial;
+    width: 300px;
+    height: 300px;
+    border: none;
+    border-radius: 25% 5% 25% 5%; 
+    background: linear-gradient(rgb(0, 118, 209), rgb(1, 42, 73));
+    box-shadow: 
+        0px 0px 50px 10px rgba(0, 0, 0, 0.557) inset,
+        30px 30px 30px -20px black /*,
+        -10px -10px 20px rgb(4, 255, 205)*/;
+
+    /*transition: background 3s linear*/
+
+    /*Llamada de animacion*/
+    animation-name: animarBordes;
+    /*Duracion de animacion*/
+    animation-duration: 10s;
+    /*Como se ejecuta la animacion*/
+    animation-timing-function:linear;
+    /*Iteraciones/Repeeticiones de la animacion*/
+    animation-iteration-count: infinite;
+    /*Tiempo de retraso*/
+    animation-delay: 1s;
+    /*Direccion en la que se recorre la animacion*/
+    animation-direction:alternate;
+    /*Estado de la animacion - usado con :hover,etc y JS mediante id o class*/
+    animation-play-state: running;
+    /**/
+
+    /* Metodo abreviado
+        animation: animarBordes 8s infinite linear running alternate;
+    /*
+
+    /*Concatenacion de animaciones*/
+        animation:
+            animarMovimiento 20s linear alternate infinite,
+            animarBordes 10s linear alternate infinite;
+    
+}
+
+.box:active{
+    animation-play-state: paused;
+}
+
+.box .paused{
+    animation-play-state: paused;
+}
+
+/*Declaro nombre de animacion*/
+@keyframes animarBordes{
+
+    0%{
+        border-radius: 50%;  
+    }
+
+    50%{
+        border-radius: 1%;
+    }
+
+    100%{
+        border-radius: 10%;  
+    }
+}
+
+@keyframes animarMovimiento {
+    
+    0%{
+        transform: translateX(0vw) translateY(0vh);
+    }
+
+    0.4%{
+        transform: translateX(1vw) translateY(1vh);
+    }
+
+    20%{
+        transform: translateX(82vw) translateY(25vh);
+    }
+
+    50%{
+        transform: translateX(43vw) translateY(63.5vh);
+    }
+
+    60%{
+        transform: translateX(0vw) translateY(30vh);
+    }
+
+    80%{
+        transform: translateX(43vw) translateY(0vh);
+    }
+
+    100%{
+        transform: translateX(82vw) translateY(63.5vh);
+    }
+
+}
+

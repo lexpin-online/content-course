@@ -1,0 +1,60 @@
+.perfil
+	/*☝🏻 @include permite la llamada de un mixin/funcion ☝🏻*/
+	@include colCenter()
+	padding-top: 50px
+	gap: 30px
+	color: white
+	/*	
+		Metodologia BEM(Block, Element, Modifier o Bloque, Elemento, Modificador) 
+		se utiliza para abreviar selecciones, en este caso &_avatar = .perfil_avatar (Ver HTML - Linea 16).
+		*/
+	&_avatar
+		border-radius: 50%
+		width: 230px
+		background-color: #4fd6ff20
+		padding: 20px $px10 0px 10px
+	
+	&_nombre
+		text-transform: uppercase
+		text-align: center
+		font-size: 30px
+		margin-bottom: 0px
+		@include sombras(drop-shadow(-2px 2px 3px black), null)
+	
+	&_titulo
+		text-transform: uppercase
+		text-align: center
+		font-weight: 700
+		font-size: 12px
+		margin-top: -25px
+		@include sombras(drop-shadow(-2px 2px 3px black), null)
+	
+	&_boton
+		@include boton()
+		animation: none
+		/*---- NUEVO ⚡🔥☝🏻 Llamando funcion*/
+		border: 1px solid opacidad(black, 0.9)
+	&_boton:hover
+		background: radial-gradient(#0f517d , #021a2b)
+		animation: saltoBoton 600ms 200ms linear alternate infinite running
+		&:active
+			border-radius: 0px
+
+.perfil__minibio
+	@include colCenter()
+	/*---NUEVO Estilos h2 ⚡💡☝🏻
+		& h2
+			@include textos()*/
+
+.ubicacion--perfil
+	@include rowCenter()
+	background-color: #ffffff1d
+	padding: 10px $px15 10px 0px
+	border-radius: 10px
+	&-location
+		width: 80px
+		height: 80px
+		margin-left: -3px
+	&-texto
+		@include colCenter()
+		gap: 10px

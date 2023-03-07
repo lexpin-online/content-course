@@ -1,0 +1,23 @@
+.galeria
+	@include colCenter()
+	gap:20px
+	margin-bottom: 20px
+	&_container 
+		@include rowCenter()
+		padding: 10px 0px 10px 10px
+		border-radius: 15px
+		gap: 10px
+		background-color:$fondoTransparente
+	&_fotoPrincipal img
+		@include fotoGaleria(90px, 40%, 1px solid black)
+	&_fotosAdicionales
+		display: flex
+		flex-wrap: wrap
+		width: 150px
+		gap: 5px
+		& img
+			@include fotoGaleria(60px, 20%)
+		& img:first-of-type
+			border-radius: 20px
+	&_boton
+		@extend .perfil_boton
