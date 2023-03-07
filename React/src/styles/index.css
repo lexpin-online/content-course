@@ -1,0 +1,14 @@
+*{
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+    margin: 0px;
+    top: 0px;
+    box-sizing: border-box;
+}
+
+body{
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(rgb(50, 143, 225),rgb(5, 26, 44));
+  background-size: contain;
+}
