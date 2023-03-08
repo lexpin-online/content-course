@@ -42,9 +42,14 @@ p{
     justify-content: center;
     align-items: center;
     gap: 20px;
+    /* perspective: 900px; */
 }
 
-.hola{
+/* .container div{
+    transform: rotateX(100deg);
+} */
+
+#cajita{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,11 +58,11 @@ p{
     background-color: brown;
     border-radius: 10px;
 }
-.hola:hover{
+#cajita:hover{
     transform: rotate(30deg);
 }
 
-.hola2{
+#cajita2{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,11 +71,11 @@ p{
     background-color: rgb(42, 165, 122);
     border-radius: 10px;
 }
-.hola2:hover{
-    transform: translate(30px, -30px);
+#cajita2:hover{
+    transform: translate(50px, -30px);
 }
 
-.hola3{
+#cajita3{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,11 +84,11 @@ p{
     background-color: rgb(114, 42, 165);
     border-radius: 10px;
 }
-.hola3:hover{
-    transform: skew(50deg)
+#cajita3:hover{
+    transform: skew(0deg,20deg)
 }
 
-.hola4{
+#cajita4{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,8 +97,8 @@ p{
     background-color: rgb(153, 165, 42);
     border-radius: 10px;
 }
-.hola4:hover{
-    transform: scale(1.5);
+#cajita4:hover{
+    transform: scale(1.3);
 }
 
 
