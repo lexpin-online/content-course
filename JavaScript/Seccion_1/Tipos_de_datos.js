@@ -22,3 +22,6 @@ typeof {"nombre" : "Diego" , "edad" : 30}
 
 //undefined
 diego
+
+//Nulo
+null
