@@ -16,7 +16,7 @@ console.log(suma(10,20));
 
 
 // Y la misma función escrita como una función de flecha quedaría así:
-let sumar = (a,b)=> a + b;
+let sumar = (a,b)=> return a + b;
 
 console.log( sumar(15,20) );
 
