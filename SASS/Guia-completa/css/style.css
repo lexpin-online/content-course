@@ -108,25 +108,6 @@ main {
   height: 100vh;
 }
 
-@-webkit-keyframes saltoBoton {
-  0% {
-    transform: scale(1) rotate(-5deg);
-    color: white;
-  }
-  33.3% {
-    transform: scale(1.05) rotate(5deg);
-    color: #0b96e1;
-  }
-  66.6% {
-    transform: scale(1.05) rotate(-5deg);
-    color: #0b96e1;
-  }
-  100% {
-    transform: scale(1) rotate(5deg);
-    color: white;
-  }
-}
-
 @keyframes saltoBoton {
   0% {
     transform: scale(1) rotate(-5deg);
@@ -205,15 +186,13 @@ main {
   text-align: center;
   font-weight: 800;
   color: #fff;
-  -webkit-animation: none;
-          animation: none;
+  animation: none;
   /*---- NUEVO ⚡🔥☝🏻 Llamando funcion*/
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 .perfil_boton:hover, .galeria_boton:hover {
   background: radial-gradient(#0f517d, #021a2b);
-  -webkit-animation: saltoBoton 600ms 200ms linear alternate infinite running;
-          animation: saltoBoton 600ms 200ms linear alternate infinite running;
+  animation: saltoBoton 600ms 200ms linear alternate infinite running;
 }
 .perfil_boton:hover:active, .galeria_boton:hover:active {
   border-radius: 0px;
@@ -318,7 +297,6 @@ main {
 .galeria_container_fotos img {
   width: 100%;
   border-radius: 10%;
-  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   -o-object-fit: cove;
