@@ -1,19 +1,20 @@
 /*
     Iniciemos con un ejemplo:
 
-    Hay 2 personas: 
-    - una en la calle(Variable de Scope Global). 
-    - otra en una casa(Variable de Scope local).
-    ambas comen helado.
+    Hay una fiesta de niños y una caja de juguetes.
 
-    la persona que esta en la casa a travez de una ventana puede saber cuantos helados 
-    come la persona en la calle.
+    Si el niño de la casa donde se realiza la fiesta tiene la caja de juguetes en su habitación, 
+    solo las personas que en su habitación podrán jugar con los juguetes de la caja. 
+    En este caso, la caja de juguetes tiene un scope local en la fiesta.
 
-    la persona en la calle no sabe que esta siendo observada por ende, 
-    no sabe cuantos helados come la otra persona, ni si quiera sabe que hay otra persona cerca.
+    Pero si el niño lleva la caja de juguetes al patio, todos los niños presentes podrán jugar 
+    con los juguetes de la caja. 
+    En este caso, la caja de juguetes tiene un scope global en la fiesta.
 
-    con este ejemplo podemos iniciar la definicion de Scope...
-    Scope es el alcance que tiene una variable desde su lugar de declaracion. 
+    Para resumir, el scope local se refiere a algo que solo se puede acceder en un lugar específico, 
+    como la habitación del niño, mientras que el scope global se refiere a algo que se puede acceder
+    desde otros lugares, como el patio con otros niños.
+
 */
 
 let variableGlobal = "Diego"
