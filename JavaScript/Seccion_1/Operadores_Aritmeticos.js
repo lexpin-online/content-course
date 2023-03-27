@@ -30,6 +30,8 @@ numero;
 let numero2 = 10;
 numero2--;
 numero2;
+
+
 //Negacion Unitaria: Devuelve el negativo de su operando.
 let negado = 5;
 negado = -negado;
